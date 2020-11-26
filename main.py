@@ -91,12 +91,12 @@ def createTree(dataSet, labels):
 if __name__ == '__main__':
 
 
-    fr = open(r'data/text1.txt')
-    listWm = [inst.strip().split(',') for inst in fr.readlines()[1:]]
+    fr = open(r'data/text.txt')
+    listWm = [inst.strip().split(',')[1:] for inst in fr.readlines()[1:]]
     # print(listWm)
     fr.close()
-    fr = open(r'data/text1.txt')
-    labels = fr.readlines()[0].split(',')
+    fr = open(r'data/text.txt')
+    labels = fr.readlines()[0].split(',')[1:]
     Trees = createTree(listWm, labels)
     fr.close()
     print(json.dumps(Trees, ensure_ascii=False))
