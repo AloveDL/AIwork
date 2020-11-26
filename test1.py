@@ -19,6 +19,7 @@ def calcShannonEnt(dataSet):
     return shannonEnt
 
 
+
 # 划分数据集，axis:按第几个属性划分，value:要返回的子集对应的属性值
 def splitDataSet(dataSet, axis, value):
     retDataSet = []
