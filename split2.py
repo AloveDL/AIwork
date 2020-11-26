@@ -29,4 +29,4 @@ def split2(inputFeature):
 
 
 if __name__ == '__main__':
-    split2("size")
+    split2("act")
